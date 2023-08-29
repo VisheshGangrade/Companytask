@@ -1,0 +1,5 @@
+<h2>Upload a Video</h2>
+<form (ngSubmit)="uploadVideo()" enctype="multipart/form-data">
+  <input type="file" (change)="handleFileInput($event)" accept="video/*">
+  <button type="submit">Upload</button>
+</form>
